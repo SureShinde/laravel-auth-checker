@@ -1,12 +1,12 @@
 <?php
 
-namespace Lab404\AuthChecker\Subscribers;
+namespace SureShinde\AuthChecker\Subscribers;
 
 use Illuminate\Auth\Events\Failed;
 use Illuminate\Auth\Events\Lockout;
 use Illuminate\Auth\Events\Login;
-use Lab404\AuthChecker\Interfaces\HasLoginsAndDevicesInterface;
-use Lab404\AuthChecker\Services\AuthChecker;
+use SureShinde\AuthChecker\Interfaces\HasLoginsAndDevicesInterface;
+use SureShinde\AuthChecker\Services\AuthChecker;
 
 class AuthCheckerSubscriber
 {

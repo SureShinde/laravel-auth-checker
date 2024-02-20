@@ -1,8 +1,8 @@
 <?php
 
-namespace Lab404\AuthChecker\Events;
+namespace SureShinde\AuthChecker\Events;
 
-use Lab404\AuthChecker\Models\Login;
+use SureShinde\AuthChecker\Models\Login;
 
 class LoginCreated
 {

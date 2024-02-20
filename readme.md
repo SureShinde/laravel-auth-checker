@@ -1,6 +1,6 @@
 # Laravel Auth Checker
 
-[![Build Status](https://travis-ci.org/404labfr/laravel-auth-checker.svg?branch=master)](https://travis-ci.org/404labfr/laravel-auth-checker) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/404labfr/laravel-auth-checker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/404labfr/laravel-auth-checker/?branch=master)
+[![Build Status](https://travis-ci.org/sureshinde/laravel-auth-checker.svg?branch=master)](https://travis-ci.org/sureshinde/laravel-auth-checker) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sureshinde/laravel-auth-checker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sureshinde/laravel-auth-checker/?branch=master)
 
 **Laravel Auth Checker** is a plugin to **collect login info** and **devices** used when a **user authenticates**. It makes it easy to **catch user authentication attempts and lockouts** from **new IP address** or **new devices**.
   
@@ -26,6 +26,7 @@
 
 | Version  | Release |
 |:--------:|:-------:|
+|    10    |   2.1   |
 |  9, 10   |   2.0   |
 |   8, 9   |   1.7   |
 |   6, 7   |   1.6   |
@@ -37,14 +38,14 @@
 - Require it with Composer:
 
 ```bash
-composer require lab404/laravel-auth-checker
+composer require sureshinde/laravel-auth-checker
 ```
 
-- Add to your **User** model the `Lab404\AuthChecker\Models\HasLoginsAndDevices` trait and the `Lab404\AuthChecker\Interfaces\HasLoginsAndDevicesInterface` interface.
+- Add to your **User** model the `SureShinde\AuthChecker\Models\HasLoginsAndDevices` trait and the `SureShinde\AuthChecker\Interfaces\HasLoginsAndDevicesInterface` interface.
 
 ```php
-use Lab404\AuthChecker\Models\HasLoginsAndDevices;
-use Lab404\AuthChecker\Interfaces\HasLoginsAndDevicesInterface;
+use SureShinde\AuthChecker\Models\HasLoginsAndDevices;
+use SureShinde\AuthChecker\Interfaces\HasLoginsAndDevicesInterface;
 
 class User extends Authenticatable implements HasLoginsAndDevicesInterface
 {
@@ -157,7 +158,7 @@ vendor/bin/phpunit
 ## Contributors
 
 - [MarceauKa](https://github.com/MarceauKa)
-- and all others [contributors](https://github.com/404labfr/laravel-auth-checker/graphs/contributors)
+- and all others [contributors](https://github.com/sureshinde/laravel-auth-checker/graphs/contributors)
 
 ## Licence
 

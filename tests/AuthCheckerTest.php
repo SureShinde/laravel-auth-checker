@@ -1,13 +1,13 @@
 <?php
 
-namespace Lab404\Tests;
+namespace SureShinde\AuthChecker\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Config\Repository;
-use Jenssegers\Agent\Agent;
-use Lab404\AuthChecker\Models\Device;
-use Lab404\AuthChecker\Models\Login;
-use Lab404\AuthChecker\Services\AuthChecker;
+use SureShinde\MobileDesktopDetect\Agent;
+use SureShinde\AuthChecker\AuthChecker\Models\Device;
+use SureShinde\AuthChecker\AuthChecker\Models\Login;
+use SureShinde\AuthChecker\AuthChecker\Services\AuthChecker;
 
 class AuthCheckerTest extends TestCase
 {

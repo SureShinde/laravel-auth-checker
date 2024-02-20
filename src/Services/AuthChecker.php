@@ -1,6 +1,6 @@
 <?php
 
-namespace Lab404\AuthChecker\Services;
+namespace SureShinde\AuthChecker\Services;
 
 use Carbon\Carbon;
 use Illuminate\Config\Repository as Config;
@@ -9,13 +9,13 @@ use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Jenssegers\Agent\Agent;
-use Lab404\AuthChecker\Events\DeviceCreated;
-use Lab404\AuthChecker\Events\FailedAuth;
-use Lab404\AuthChecker\Events\LockoutAuth;
-use Lab404\AuthChecker\Events\LoginCreated;
-use Lab404\AuthChecker\Interfaces\HasLoginsAndDevicesInterface;
-use Lab404\AuthChecker\Models\Device;
-use Lab404\AuthChecker\Models\Login;
+use SureShinde\AuthChecker\Events\DeviceCreated;
+use SureShinde\AuthChecker\Events\FailedAuth;
+use SureShinde\AuthChecker\Events\LockoutAuth;
+use SureShinde\AuthChecker\Events\LoginCreated;
+use SureShinde\AuthChecker\Interfaces\HasLoginsAndDevicesInterface;
+use SureShinde\AuthChecker\Models\Device;
+use SureShinde\AuthChecker\Models\Login;
 
 class AuthChecker
 {

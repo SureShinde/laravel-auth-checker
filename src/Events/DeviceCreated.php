@@ -1,8 +1,8 @@
 <?php
 
-namespace Lab404\AuthChecker\Events;
+namespace SureShinde\AuthChecker\Events;
 
-use Lab404\AuthChecker\Models\Device;
+use SureShinde\AuthChecker\Models\Device;
 use Illuminate\Queue\SerializesModels;
 
 class DeviceCreated

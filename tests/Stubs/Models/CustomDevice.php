@@ -1,8 +1,8 @@
 <?php
 
-namespace Lab404\Tests\Stubs\Models;
+namespace SureShinde\AuthChecker\Tests\Stubs\Models;
 
-use Lab404\AuthChecker\Models\Device;
+use SureShinde\AuthChecker\AuthChecker\Models\Device;
 
 class CustomDevice extends Device
 {

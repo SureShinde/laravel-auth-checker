@@ -1,13 +1,13 @@
 <?php
 
-namespace Lab404\AuthChecker\Models;
+namespace SureShinde\AuthChecker\Models;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
  * Class HasLoginsAndDevices
  *
- * @package Lab404\AuthChecker\Models
+ * @package SureShinde\AuthChecker\Models
  */
 trait HasLoginsAndDevices
 {

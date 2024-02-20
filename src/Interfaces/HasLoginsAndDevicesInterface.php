@@ -1,11 +1,11 @@
 <?php
 
-namespace Lab404\AuthChecker\Interfaces;
+namespace SureShinde\AuthChecker\Interfaces;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
- * @package Lab404\AuthChecker\Interfaces
+ * @package SureShinde\AuthChecker\Interfaces
  * @property \Illuminate\Support\Collection $logins
  * @property \Illuminate\Support\Collection $auths
  * @property \Illuminate\Support\Collection $fails

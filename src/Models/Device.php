@@ -1,6 +1,6 @@
 <?php
 
-namespace Lab404\AuthChecker\Models;
+namespace SureShinde\AuthChecker\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 /**
- * @package Lab404\AuthChecker\Models
+ * @package SureShinde\AuthChecker\Models
  * @property int                                        $id
- * @property \Lab404\AuthChecker\Models\Login           $login
- * @property \Lab404\AuthChecker\Models\Login[]         $logins
+ * @property \SureShinde\AuthChecker\Models\Login           $login
+ * @property \SureShinde\AuthChecker\Models\Login[]         $logins
  * @property \Illuminate\Contracts\Auth\Authenticatable $user
  * @property int                                        $user_id
  * @property string                                     $user_type

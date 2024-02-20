@@ -1,14 +1,14 @@
 <?php
 
-namespace Lab404\Tests;
+namespace SureShinde\AuthChecker\Tests;
 
 use Illuminate\Config\Repository;
 use Jenssegers\Agent\Agent;
-use Lab404\AuthChecker\Models\Device;
-use Lab404\AuthChecker\Models\Login;
-use Lab404\Tests\Stubs\Models\CustomDevice;
-use Lab404\Tests\Stubs\Models\CustomLogin;
-use Lab404\Tests\Stubs\Models\User;
+use SureShinde\AuthChecker\AuthChecker\Models\Device;
+use SureShinde\AuthChecker\AuthChecker\Models\Login;
+use SureShinde\AuthChecker\Tests\Stubs\Models\CustomDevice;
+use SureShinde\AuthChecker\Tests\Stubs\Models\CustomLogin;
+use SureShinde\AuthChecker\Tests\Stubs\Models\User;
 
 class HasLoginsAndDevicesTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Lab404\Tests;
+namespace SureShinde\AuthChecker\Tests;
 
-use Lab404\AuthChecker\AuthCheckerServiceProvider;
-use Lab404\Tests\Stubs\Models\User;
-use Orchestra\Database\ConsoleServiceProvider;
+use SureShinde\AuthChecker\AuthChecker\AuthCheckerServiceProvider;
+use SureShinde\AuthChecker\Tests\Stubs\Models\User;
+use SureShinde\OrchestraDatabase\ConsoleServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {

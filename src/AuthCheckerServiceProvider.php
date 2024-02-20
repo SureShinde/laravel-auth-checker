@@ -1,16 +1,16 @@
 <?php
 
-namespace Lab404\AuthChecker;
+namespace SureShinde\AuthChecker;
 
 use Illuminate\Events\Dispatcher;
 use Jenssegers\Agent\AgentServiceProvider;
-use Lab404\AuthChecker\Services\AuthChecker;
-use Lab404\AuthChecker\Subscribers\AuthCheckerSubscriber;
+use SureShinde\AuthChecker\Services\AuthChecker;
+use SureShinde\AuthChecker\Subscribers\AuthCheckerSubscriber;
 
 /**
  * Class AuthCheckerServiceProvider
  *
- * @package Lab404\AuthChecker
+ * @package SureShinde\AuthChecker
  */
 class AuthCheckerServiceProvider extends \Illuminate\Support\ServiceProvider
 {

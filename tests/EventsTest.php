@@ -1,6 +1,6 @@
 <?php
 
-namespace Lab404\Tests;
+namespace SureShinde\AuthChecker\Tests;
 
 use Illuminate\Auth\Events\Failed;
 use Illuminate\Auth\Events\Lockout;
@@ -8,11 +8,11 @@ use Illuminate\Auth\Events\Login;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
-use Jenssegers\Agent\Agent;
-use Lab404\AuthChecker\Events\FailedAuth;
-use Lab404\AuthChecker\Events\LockoutAuth;
-use Lab404\AuthChecker\Services\AuthChecker;
-use Lab404\Tests\Stubs\Models\User;
+use SureShinde\MobileDesktopDetect\Agent;
+use SureShinde\AuthChecker\AuthChecker\Events\FailedAuth;
+use SureShinde\AuthChecker\AuthChecker\Events\LockoutAuth;
+use SureShinde\AuthChecker\AuthChecker\Services\AuthChecker;
+use SureShinde\AuthChecker\Tests\Stubs\Models\User;
 
 class EventsTest extends TestCase
 {
@@ -90,7 +90,7 @@ class EventsTest extends TestCase
         $this->manager->handleFailed($user);
 
         Event::assertDispatched(FailedAuth::class, function ($e) use ($user) {
-            return $e->login->user_id == $user->id && $e->login->type == \Lab404\AuthChecker\Models\Login::TYPE_FAILED;
+            return $e->login->user_id == $user->id && $e->login->type == \SureShinde\AuthChecker\AuthChecker\Models\Login::TYPE_FAILED;
         });
     }
 
@@ -104,7 +104,7 @@ class EventsTest extends TestCase
         $this->manager->handleLockout(['email' => 'admin@exemple.com']);
 
         Event::assertDispatched(LockoutAuth::class, function ($e) use ($user) {
-            return $e->login->user_id == $user->id && $e->login->type == \Lab404\AuthChecker\Models\Login::TYPE_LOCKOUT;
+            return $e->login->user_id == $user->id && $e->login->type == \SureShinde\AuthChecker\AuthChecker\Models\Login::TYPE_LOCKOUT;
         });
     }
 }

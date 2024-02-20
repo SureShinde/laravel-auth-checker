@@ -1,11 +1,11 @@
 <?php
 
-namespace Lab404\Tests\Stubs\Models;
+namespace SureShinde\AuthChecker\Tests\Stubs\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Lab404\AuthChecker\Interfaces\HasLoginsAndDevicesInterface;
-use Lab404\AuthChecker\Models\HasLoginsAndDevices;
+use SureShinde\AuthChecker\AuthChecker\Interfaces\HasLoginsAndDevicesInterface;
+use SureShinde\AuthChecker\AuthChecker\Models\HasLoginsAndDevices;
 
 class User extends Authenticatable implements HasLoginsAndDevicesInterface
 {

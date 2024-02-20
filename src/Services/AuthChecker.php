@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
-use Jenssegers\Agent\Agent;
+use SureShinde\MobileDesktopDetect\Agent;
 use SureShinde\AuthChecker\Events\DeviceCreated;
 use SureShinde\AuthChecker\Events\FailedAuth;
 use SureShinde\AuthChecker\Events\LockoutAuth;

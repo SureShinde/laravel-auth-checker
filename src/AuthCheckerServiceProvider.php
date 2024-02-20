@@ -3,7 +3,7 @@
 namespace SureShinde\AuthChecker;
 
 use Illuminate\Events\Dispatcher;
-use Jenssegers\Agent\AgentServiceProvider;
+use SureShinde\MobileDesktopDetect\AgentServiceProvider;
 use SureShinde\AuthChecker\Services\AuthChecker;
 use SureShinde\AuthChecker\Subscribers\AuthCheckerSubscriber;
 

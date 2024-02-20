@@ -2,7 +2,7 @@
     "name": "sureshinde/laravel-auth-checker",
     "description": "Laravel Auth Checker allows you to log users authentication, devices authenticated from and lock intrusions.",
     "type": "library",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "keywords": [
         "laravel",
         "package",
